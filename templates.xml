@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<messages xmlns:if="Wt.WTemplate.conditions">
+
+  <message id="blog-login">
+    ${user-name} ${password} ${remember-me} Remember me
+    ${login}${<if:oauth>}, or use ${icons}${</if:oauth>}
+  </message>
+
+  <message id="blog-login-status">
+    <div class="login-box">
+      <div>
+      <h1><a href="http://localhost/" style="color: white;">TaskMaster</a></h1>
+      </div>
+      <div class="menu">
+        <div class="login-menu">
+          ${login} ${login-link} | ${register-link}
+        </div>
+        <div class="user-menu">
+          ${profile-link} ${author-panel-link} ${userlist-link}
+        </div>
+      </div>
+    </div>
+  </message>
+
+  <message id="edit-users-list">
+    <h4>Registered users</h4>
+    ${user-list}
+    Limit list to user names containing : ${limit-edit} ${limit-button}
+  </message>
+
+  <message id="edit-user">
+    <div class="profile-panel">
+      <h4>Edit user ${username}</h4>
+      ${role-button}
+    </div>
+  </message>
+
+  <message id="edit-one-user">
+    <h4>Editing user ${user}</h4>
+    ${save-button} ${cancel-button}
+  </message>
+
+  <message id="blog-invaliduser">
+    <div class="profile-panel">
+      <h4>This user id is invalid</h4>
+    </div>
+  </message>
+
+  <message id="blog-mustlogin">
+    <div class="profile-panel">
+      <h4>You need to log in to access this function</h4>
+    </div>
+  </message>
+
+  <message id="blog-mustbeadministrator">
+    <div class="profile-panel">
+      <h4>You need to be administrator to access this function</h4>
+    </div>
+  </message>
+
+  <message id="blog-register">
+    <h4>Register</h4>
+      <p>
+        To register as a user to post comments with your own login,
+        please fill out the following form.
+      </p>
+      <table style="margin: 5px auto;">
+        <tr>
+          <td>Login:</td>
+          <td>${name}</td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td>${passwd}</td>
+        </tr>
+
+        <tr>
+          <td>Repeat password:</td>
+          <td>${passwd2}</td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: center">
+            ${ok-button}
+            ${cancel-button}
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="login-error">
+            ${error}
+          </td>
+        </tr>
+        </table>
+  </message>
+
+  <message id="blog-userslist">
+    <div class="profile-panel">
+      <h4>Registered users</h4>
+        Search for ${searchstring} ${search-button}<br/>
+    </div>
+  </message>
+
+  <message id="blog-profile">
+    <div class="profile-panel">
+      <h4>Profile panel for <span class="poster">${user}</span></h4>
+      <table style="margin: 5px auto;">
+        <tr>
+          <td>New password:</td>
+          <td>${passwd}</td>
+        </tr>
+        <tr>
+          <td>Repeat password:</td>
+          <td>${passwd2}</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            ${ok-button}
+            ${cancel-button}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center; color: red;" class="login-error">
+            ${error}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </message>
+
+
+
+  <message id="main-page">
+    <div class="page">
+      <h3>Your projects</h3>
+      ${createProjectButton}
+      ${myTasksButton}
+      <div class="all-projects">${projects}</div>
+    </div>
+  </message>
+
+  <message id="error">
+    <h3>${ErrorText}</h3>
+  </message>
+  
+  <message id="project">
+    <div class="elem">
+      <h4>${title}</h4>
+      <div class="row">
+        <div class="col-9">
+          ${description}
+          ${nameInput}
+          ${textInput}
+        </div>
+        <div class="col-3">
+          ${cancelButton}  ${editButton} ${deleteButton}
+        </div>
+      </div>
+    </div>
+  </message>
+
+  <message id="project-page-admin">
+    <h1>${projectName}</h1>
+    <div>${description}</div>
+    <div class="row">
+    <div class="users-list">
+      ${userNameEdit}
+      ${usersList}
+    </div>
+    <div>${inviveButton} ${createBoardButton}</div></div>
+    <div>${boards}</div>
+  </message>
+
+  <message id="project-page">
+    <div class="page">
+      <h3>${projectName}</h3>
+      <div>${description}</div>
+      <div>${createBoardButton}</div>
+      <div>${boards}</div>
+    </div>
+  </message>
+
+  <message id="board-page">
+    <div class="elem">
+      <h3>${boardName}</h3>
+      <div>${description}</div>
+      <div>Created by ${creator}</div>
+      <div class="btn-enable">${unlockDrag}</div>
+      <div class="btn-enable">${createTask}</div>
+      <div class="row boards-tasks">
+        <div class="col-4 task-list">
+          <h2>Open</h2>
+          <div class="cont">${openTasks}</div>
+        </div>
+        <div class="col-3 task-list">
+          <h2>In Progres</h2>
+          <div class="cont">${inProgressTasks}</div>
+        </div>
+        <div class="col-4 task-list">
+          <h2>Closed</h2>
+          <div class="cont">${closedTasks}</div>
+        </div>
+      </div>
+    </div>
+  </message>
+
+  <message id="mytasks-page">
+    <div class="elem">
+      <h3>${boardName}</h3>
+      <div>${description}</div>
+      <div class="btn-enable">${unlockDrag}</div>
+      <div class="row boards-tasks">
+        <div class="col-4 task-list">
+          <h2>Open</h2>
+          <div class="cont">${openTasks}</div>
+        </div>
+        <div class="col-3 task-list">
+          <h2>In Progres</h2>
+          <div class="cont">${inProgressTasks}</div>
+        </div>
+        <div class="col-4 task-list">
+          <h2>Closed</h2>
+          <div class="cont">${closedTasks}</div>
+        </div>
+      </div>
+    </div>
+  </message>
+
+  <message id="task-list-item">
+    <ul class="m-d expand-list">
+	  <li data-md-content="200">
+		<label name="tab" for="tab1" tabindex="-1" class="tab_lab" role="tab">${title}</label>
+		<input type="checkbox" class="tab" id="tab1" tabindex="0"/>
+		<div class="content">
+            ${nameInput}
+            <div>Text: ${text}${textInput}</div>
+            <div>AssignedUsers:</div>
+            <div>${AssignedUsers}</div>
+            <div> ${AssignYourself}</div>
+            <div>${cancelButton} ${editButton} ${deleteButton}</div>
+        </div>
+    </li>
+  </ul>
+  </message>
+
+  <message id="task-list-item-assign">
+    <ul class="m-d expand-list">
+	  <li data-md-content="200">
+		<label name="tab" for="tab1" tabindex="-1" class="tab_lab" role="tab">${title}</label>
+		<input type="checkbox" class="tab" id="tab1" tabindex="0"/>
+		<div class="content">
+            ${nameInput}
+            <div>Text: ${text}${textInput}</div>
+            <div>AssignedUsers:</div>
+            <div>${AssignedUsers}</div>
+            <div>${ToAssign} ${AssignButton}</div>
+            <div>${cancelButton} ${editButton} ${deleteButton}</div>
+        </div>
+    </li>
+  </ul>
+  </message>
+
+  <message id="board-list-item-admin">
+    <div class="elem">
+      <h4>${title}</h4>
+      <div class="row">
+        <div class="col-9">
+          ${description}
+          ${nameInput}
+          ${textInput}
+          Created by ${creator}
+        </div>
+        <div class="col-3">
+          ${cancelButton}  ${editButton} ${deleteButton}
+        </div>
+      </div>
+    </div>
+  </message>
+
+  <message id="board-list-item">
+    <div class='elem'>
+      <h4>${title}</h4>
+        <div>
+          ${description}
+        </div>
+        <div>
+          Created by ${creator}
+        </div>
+      </div>
+  </message>
+
+  <message id="user-task-list-item">
+    <div class="usetasklistitem">
+      <ul>
+        <li>${username}</li>
+      </ul>
+    </div>
+  </message>
+ 
+  <message id="archive-title">
+    <h4>Archive</h4>
+  </message>
+
+  <message id="main-view">
+    <div class="container">
+      ${main-image}
+    </div>
+  </message>
+  
+  <message id="login">Login</message>
+  <message id="login-tooshort">Login too short (must be at least {1} characters)</message>
+  <message id="passwd-mismatch">Passwords don't match.</message>
+  <message id="register">Register</message>
+  <message id="logout">Logout</message>
+  <message id="archive">Archive</message>
+  <message id="profile">Profile</message>
+  <message id="author-post">Authoring panel</message>
+  <message id="edit-users">Edit users</message>
+  <message id="comment-add">Add comment</message>
+  <message id="comment-reply">Reply</message>
+  <message id="comment-edit">Edit</message>
+  <message id="comment-delete">Delete</message>
+  <message id="comment-deleted"><i>[[Comment deleted]]</i></message>
+  <message id="blog-read-more">Read the rest of this post &gt;&gt;</message>
+  <message id="new-post">New post</message>
+  <message id="publish">Publish</message>
+  <message id="retract">Retract</message>
+  <message id="delete">Delete</message>
+  <message id="edit">Edit</message>
+  <message id="save">Save</message>
+  <message id="cancel">Cancel</message>
+  <message id="go-limit">Search</message>
+  <message id="demote-admin">Demote this administrator to a regular visitor</message>
+  <message id="promote-user">Promote this user to administrator</message>
+  <message id="no-users-found">No users found</message>
+</messages>
